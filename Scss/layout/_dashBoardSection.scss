@@ -1,0 +1,57 @@
+@use '../abstracts/_variables' as *;
+@use '../abstracts/mixins' as *;
+
+
+.Admin-Dashboard{
+    // display: none;
+    width:100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgba(128, 128, 128, 0.201);
+    h3{
+        color:$primary-color;
+        margin-bottom: 1rem;
+
+    }
+    .header{
+        width: 100%;
+        border-bottom: 1px solid gray;
+        margin-bottom: 1rem;
+        nav{
+  @include displayType(flex , center , flex-start);
+       ul{
+        li{
+            .active{
+                  color:$primary-color;
+            }
+            padding-right: 1rem;
+        
+        }
+       }
+
+    }
+}
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    table , .chmaign-info{
+        width: 100%;
+        
+    
+    }
+      .chmaign-info{
+        width: 100%;
+        display: none;
+        tr{
+            width: 100%;
+        }
+        
+    }
+   
+
+
+}
+//   @include displayType(flex , center , space-evenly);

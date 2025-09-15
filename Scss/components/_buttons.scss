@@ -1,0 +1,15 @@
+@use '../abstracts/_variables' as *;
+@use '../abstracts/mixins' as *;
+.btn {
+  
+  font-family: $font-main;
+  font-size: 1.5rem;
+
+  &.btn-primary {
+    @include button-style($primary-color);
+  }
+
+  &.btn-secondary {
+    @include button-style($secondary-color);
+  }
+}

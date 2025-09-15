@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowdfunding</title>
+    <!-- main style -->
+    <link rel="stylesheet" href="./Scss/main.css">
+    <!-- font awsome libarry -->
+     <link rel="stylesheet" href="./libaray/fontawesome-free-7.0.0-web/fontawesome-free-7.0.0-web/css/all.min.css">
+      
+</head>
+<body>
+       <!-- start header  -->
+        <header>
+                <!-- div image logo -->
+                 <div class="logo-image">
+                    <img src="./Images/logo.png" alt="" width="100px">
+                 </div>
+                 <!-- nav -->
+                  <nav>
+                        <ul>
+                            <li><a  href="./index.html" class="link-home-color">Home</a></li>  
+                            <li><a href="">Campaigns</a></li>  
+                            <li><a href="./index.html">Contact</a></li>  
+                            <li><a href="./index.html">Help</a></li>  
+                        </ul>                       
+                  </nav>
+                    <!-- button sign in & Register -->
+
+                 <div class="container-btn">
+                         <a href="" class="btn btn-primary btn-login">Login</a>
+                        <div class="dropdown">
+                                
+    
+                        </div>
+                         
+                 </div>
+                 <!-- in sesponsive design -->
+                <button class="menu" aria-controls="sidebar" aria-expanded="false" aria-label="open menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            
+
+        </header>
+          <!-- start side bar -->
+        <aside id="sidebar" class="sidebar" aria-hidden="true">
+                <div class="sidebar-header">
+                         <button class="close-btn close-side-bar" aria-label="Close menu">
+                                <i class="fa-solid fa-xmark"></i>
+                        </button>
+                </div>
+                    
+                 <ul class="sidebar-link">
+                        <li><a  href="./index.html" class="link-home-color">Home</a></li>  
+                        <li><a href="">Campaigns</a></li>  
+                        <li><a href="./index.html">Contact</a></li>  
+                        <li><a href="./index.html">Help</a></li>  
+                 </ul>  
+                <div class="sidebar-actions">
+                         <a href="" class="btn btn-primary  btn-login">LogIn</a>
+                </div>     
+
+                 
+
+        </aside>
+  
+        <!-- end side bar -->
+        <div class="overlay"></div>
+        <div class="login-p-r"></div>
+              <!-- popup login or  -->
+         <!-- <div class="overlay overlay-popup">
+                
+                </div>
+                <div class="popup-content popup-logIn">
+                        <div class="head-btn-close">
+                                <h3>Login</h3>
+                                <button class="close-btn pupup-login-btn-close" aria-label="Close popup">
+                                        <i class="fa-solid fa-xmark"></i>
+                                </button>
+                        </div>
+                        <form action="" class="form-log" novalidate>
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="emaild1@gmail.com" id="email" class="check-email" >
+                                <p class="error-email">please enter availd email</p>
+                                <label for="password">password</label>
+                                <input type="password" placeholder="amg123" id="password" class="check-password" > 
+                                <p class="error-password">please enter availd password</p>
+
+                                <div class="center-btn">
+                                        
+                                        <button type="submit" class="btn btn-primary logIn">Login</button>
+                                        
+                                </div>
+                        </form>
+                        <p>Don't have an account? <a href="#" class="btn-register">Register</a></p>
+                </div> -->
+                <!-- <div class="popup-content Popup-register">
+                        <div class="head-btn-close">
+                                 <h3>Register</h3>
+                                <button class="close-btn pupup-register-btn-close" aria-label="Close popup">
+                                <i class="fa-solid fa-xmark"></i>
+                               </button>
+                        </div>
+                        <form action="" class="form-register">
+                                <label for="fullName">Full Name</label>
+                                <input type="text" placeholder="ex:mahmoud Yasser" id="fullName" required>
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="emaild1@gmail.com" id="email" required>
+                                <label for="password">password</label>
+                                <input type="password" placeholder="amg123" id="password" required> 
+                                <div class="center-btn">
+                                    <button class="btn btn-primary register">Login</button>
+
+                              
+
+                                </div>
+                        </form>
+                        <p>You Have acount <a href="#" class="go-to-login">LogIn</a></p>
+                </div> -->
+                <div class="container"></div>
+                <!-- hero section -->
+                <section class="hero-section">
+                 <div class="container">
+                         <div class="hero-title">
+                        <h1>Support Gaza. Every Donation Matters.</h1>
+                        <p> Join hands to provide urgent relief, food, and shelter for families in Gaza. Together, we can bring hope and make a real difference.</p>
+                        </div>
+                        <div class="hero-actions">
+                                <a href="#" class="btn btn-primary">Donate Now</a>
+                        </div>
+                 </div>
+          </section>
+          <!-- section search and cards -->
+         <section class="searchAndCards">
+                <div class="container">
+                        <div class="search-row">
+                                <input type="search" placeholder="Search campaigns...." class="search-iput">
+                                <select name="campaign-type" id="campaign-type">
+                                        <option value="" selected>All Categories</option>
+                                        <option value="" >Disaster</option>
+                                        <option value="" >Children</option>
+                                        <option value="" >Food Crisis</option>
+                                        <option value="" >Education</option>
+                                        <option value="" >Homeless</option>
+                                </select>
+                                <button class="btn btn-primary btn-search">Search</button>
+                        </div>
+                        <div class="show-cards">
+
+                                
+                        </div>
+                </div>
+                
+
+         </section>
+        <div class="container">
+
+                 <div class="create-chpign"></div>
+        </div>
+
+           <Section class="show-dashboard">
+                <div class="container">
+                     
+                <div class="Admin-Dashboard"></div>
+                </div>
+
+         </Section>
+         
+        <!-- footer  -->
+         <footer>
+                <div class="container">
+                        <div class="footer-about">
+                                 <h4>Discover</h4>
+                                <ul>
+                                        <li><a href="">All Campaigns</a></li>
+                                        <li><a href="">Disaster</a></li>
+                                        <li><a href="">Children</a></li>
+                                        <li><a href="">Food Crisis</a></li>
+                                        <li><a href="">Education</a></li>
+                                        <li><a href="">Homeless</a></li>
+                                </ul>
+                        </div>
+                        <div class="footer-trems">
+                                <h4>Create</h4>
+                                <ul>
+                                        <li><a href="">Start a Campaign</a></li>
+                                        <li><a href="">campaign</a></li>
+                                        <li><a href="">Seccuess Strories</a></li>
+                                        <li><a href="">Creator Resources</a></li>
+                                </ul>
+                        </div>
+                        <div class="footer-trems">
+                                <h4>Support</h4>
+                                <ul>
+                                        <li><a href="">Help center</a></li>
+                                        <li><a href="">Contact Us</a></li>
+                                        <li><a href="">Trust</a></li>
+                                        <li><a href="">FAQ</a></li>
+                                </ul>
+                        </div>
+                        <div class="footer-address">
+                                     <h4>Newsletter</h4>
+                                    <p>Stay updated with the latest campaigns and platform news. </p>
+                        </div>
+                </div>
+                <p class="copy-right">© 2024 CrowdFund Pro. All rights reserved.</p>
+
+         </footer>
+       
+         
+ 
+      <script src="./main.js" ></script>
+      <!-- <script src="./l.js" ></script> -->
+        
+</body>
+
+</html>

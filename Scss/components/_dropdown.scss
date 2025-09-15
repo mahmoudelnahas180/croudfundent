@@ -1,0 +1,33 @@
+@use '../abstracts/_variables' as *;
+@use '../abstracts/mixins' as *;
+.dropdown{
+    // display: none;
+    position: relative;
+    .dropdown-content{
+        position: absolute;
+        background-color: $white;
+        padding: 2rem;
+        top: 3rem;
+        // left: -20px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        width: 20em;
+        .user-details ,.log-out-p,.user-link{
+            padding-bottom: 1rem;
+            border-bottom: 1PX solid gray;
+            margin-bottom: 1rem;
+          
+        }
+          a{
+                display: block;
+                margin-bottom: 0.5rem;
+            }
+            // .admin-dash{
+            //     display: none;
+            // }
+
+}
+}

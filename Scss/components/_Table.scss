@@ -1,0 +1,14 @@
+@use '../abstracts/_variables' as *;
+@use '../abstracts/mixins' as *;
+.Show-details{
+  table{
+    background-color: antiquewhite;
+    td{
+        background-color: gray;
+        padding: 1rem;
+    }
+    tr{
+        padding: 1rem;
+    }
+  }
+}

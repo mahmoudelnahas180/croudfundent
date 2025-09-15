@@ -1,0 +1,15 @@
+@use '../abstracts/_variables' as *;
+@use '../abstracts/mixins' as *;
+nav{
+     ul{
+            @include displayType(flex , center , space-evenly);
+         li{
+            padding: 1rem;
+            list-style-type:none ;
+         }
+
+     }    
+}
+
+
+

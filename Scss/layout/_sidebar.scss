@@ -1,0 +1,56 @@
+@use '../abstracts/_variables' as *;
+@use '../abstracts/mixins' as *;
+.sidebar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100vh;
+        z-index: 40;
+        background-color: $bg-color;
+        padding: 1rem;
+        transform:translateX(100%) ;
+       
+        -webkit-transform:translateX(100%) ;
+        -moz-transform:translateX(100%) ;
+        -ms-transform:translateX(100%) ;
+        -o-transform:translateX(100%) ;
+ .sidebar-header{
+        text-align: right;
+    
+     }
+    ul{  margin-bottom: 2rem;
+        li{
+            padding: 1rem;
+            list-style-type: none;
+        }
+    }
+    .sidebar-actions{
+        .btn{
+            text-align: center;
+            margin-bottom: 1rem;
+            display: block;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+}
+    }
+   
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background:rgba(128, 128, 128, 0.563); 
+  z-index: 30;
+  display: none; 
+}
+    .close-btn{
+            background-color: transparent;
+            border-style: none;
+            
+        }

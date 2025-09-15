@@ -1,0 +1,39 @@
+
+@use '../abstracts/_variables' as *;
+@use '../abstracts/mixins' as *;
+
+footer{
+    background-color: $bg-footer;
+    color: $bg-color;
+    padding-top: 2rem;
+     .container{
+        @include displayType(flex , flex-start, space-between);
+        h4{
+            font-family: $font-main;
+            font-size: 1rem;
+            padding-bottom: 1rem;
+        }
+        p{
+            margin-top:1rem ;
+            margin-bottom: 1rem;
+        }
+     }
+   
+        ul{
+            padding-left: 1rem;
+        li{  
+            list-style-type: none;
+            padding-bottom: 1rem;
+            a{
+                color: $bg-color;
+                    font-size: 0.8rem;
+
+            }
+        }
+    }
+
+   .copy-right{
+    text-align: center;
+    padding: 2rem;
+   }
+     }

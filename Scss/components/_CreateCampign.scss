@@ -1,0 +1,96 @@
+/* General styling for the form container */
+.creat-form {
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 40px auto; /* Centers the form on the page */
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Adds space between form elements */
+}
+
+/* Styling for the main heading */
+.creat-form h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling for labels */
+.creat-form label {
+  font-weight: bold;
+  margin-bottom: -5px; /* Reduces space below the label */
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Common styling for text inputs, number input, and select dropdown */
+.creat-form input[type="text"],
+.creat-form input[type="number"],
+.creat-form .discription,
+.creat-form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+/* Style for when an input is focused (clicked on) */
+.creat-form input:focus,
+.creat-form select:focus {
+  border-color: #007bff;
+  outline: none; /* Removes the default browser outline */
+}
+
+/* Custom styling for the file input */
+.creat-form .load-image {
+    font-size: 0.9rem;
+}
+
+/* Hides the default file input button and shows our custom text */
+.creat-form input[type="file"]::file-selector-button {
+  background-color: #5a67d8;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.creat-form input[type="file"]::file-selector-button:hover {
+    background-color: #434190;
+}
+
+
+/* Container to center the button */
+.center-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Styling for the create button */
+.btn.create {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover effect for the create button */
+.btn.create:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}

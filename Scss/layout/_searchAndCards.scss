@@ -1,0 +1,54 @@
+@use '../abstracts/_variables' as *;
+@use '../abstracts/mixins' as *;
+.searchAndCards{
+
+    .container{
+            padding-top: 2rem;
+    padding-bottom: 2rem;
+        padding: 10px;
+    background-color: rgba(128, 128, 128, 0.208);
+    border-radius: 5px    ;
+    -webkit-border-radius: 5px    ;
+    -moz-border-radius: 5px    ;
+    -ms-border-radius: 5px    ;
+    -o-border-radius: 5px    ;
+
+    .show-cards {
+        width:50%;
+        height: 50px;
+        @include displayType(flex, center, space-between);
+        
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+
+     }
+
+}
+    .search-row{
+        @include displayType(flex, center, space-between);
+        select{
+           
+            width: 25%;
+            padding: 0.5rem 1rem;
+              border-radius: 5px;
+              border-style: none ;
+              option{
+                  font-family: $font-main;
+                  font-size: 1rem;
+                  
+              }
+
+
+        }
+        button{
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+        }
+  
+
+    }
+   
+   
+}
+

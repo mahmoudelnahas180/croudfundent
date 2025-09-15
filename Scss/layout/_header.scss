@@ -1,0 +1,30 @@
+
+@use '../abstracts/_variables' as *;
+@use '../abstracts/mixins' as *;
+
+header {
+  @include displayType(flex , center , space-evenly);
+  padding: 0px 20px;
+  background: $bg-color;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+     .logo-image{
+      height: 5rem;
+      img{
+        height: 100%;
+      }
+     }
+  .menu{
+    display: none; 
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  .User-Name{
+    display: none;
+  }
+
+
+  
+}
+

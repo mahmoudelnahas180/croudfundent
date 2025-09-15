@@ -1,0 +1,17 @@
+@use '../abstracts/_variables' as *;
+
+a{
+   text-decoration: none;
+   font-family: $font-main;
+   color: $secondary-color;
+   font-size: 1.5rem;
+   &:hover{
+    color: $primary-color;
+    
+   }
+
+}
+.link-home-color{
+ color: $primary-color;
+
+}

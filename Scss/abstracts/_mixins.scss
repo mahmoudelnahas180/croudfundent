@@ -1,0 +1,19 @@
+@use '../abstracts/_variables' as *;
+@mixin displayType($displayType,$align-item , $justify-content) {
+  display:$displayType;
+  align-items: $align-item ;
+  justify-content:  $justify-content;
+}
+
+@mixin button-style($bg, $color: $white) {
+  background-color: $bg;
+  color: $color;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    opacity: 0.85;
+  }
+}

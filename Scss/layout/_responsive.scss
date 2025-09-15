@@ -1,0 +1,104 @@
+@use '../abstracts/_variables' as *;
+@use '../abstracts/mixins' as *;
+@media screen and (max-width: 768px) {
+ 
+  header{
+    .menu{
+        display: block;
+        border-style: none;
+        background-color: transparent !important;
+    }
+  }
+
+ .container-btn{
+    display: none;
+
+ }
+ header nav{
+    display: none;
+ }
+//  hero section responsive
+.hero-section{
+  
+        .btn{
+           &.btn-primary{
+            margin-bottom:2rem ;
+           }
+        }
+   
+}
+
+//  footer responsive
+ footer .container {
+   
+    width: calc(100% - 2rem); 
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    @include displayType(flex , flex-start, space-between);
+
+    flex-direction: column;
+    h4{
+        padding-top:1rem;
+    }
+   
+}
+ body .container{
+     width: calc(100% - 2rem); 
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem; 
+ }
+ // sign in && sign up
+.sign{
+  
+   .card-sign{
+      width: 90%;
+   }
+} 
+.card{
+   width: 100%;
+   // width: calc(100% / 1 );
+}
+ .table-custom,
+  .table-custom thead,
+  .table-custom tbody,
+  .table-custom td,
+  .table-custom tr {
+    display: block;
+    width: 100%;
+  }
+
+  .table-custom thead {
+    display: none;
+  }
+
+  .table-custom tr {
+    margin-bottom: 1rem;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+
+  .table-custom td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10px;
+    font-size: 14px;
+
+    &:before {
+      content: attr(data-label);
+      font-weight: bold;
+      color: $text-dark;
+    }
+  }
+
+}
+@media screen and (max-width: 1024px) {
+//    .card{
+//    width: calc(100% / 2 - 1rem);
+// }
+}
